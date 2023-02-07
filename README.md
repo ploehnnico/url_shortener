@@ -14,7 +14,6 @@ $ pip3 install -e .
 To bring up the api server:
 ```bash
 $ flask --app url_shortener run
-
 ```
 
 The two api endpoints are available on localhost:5000 at /encode and /decode.
@@ -31,11 +30,30 @@ curl -X POST -i -H "Content-Type: application/json" -d '{"url": "https://very.ve
 ```
 
 ### Response
-```
   HTTP/1.1 201 CREATED
   Server: Werkzeug/2.2.2 Python/3.11.0
   Date: Tue, 07 Feb 2023 14:31:36 GMT
   Content-Type: application/json
   Content-Length: 35
   Connection: close
-  {"url":"https://short.en/7UzG1CM"}```
+  {"url":"https://short.en/7UzG1CM"}
+  
+# Decode a URL
+The decode endoint is used to convert a short URL back to its original URL:
+
+```http
+POST /decode
+```
+
+```bash
+curl -X POST -i -H "Content-Type: application/json" -d '{"url": "https://short.en/7UzG1CM"}' http://localhost:5000/decode
+```
+### Response
+```HTTP/1.1 200 OK
+Server: Werkzeug/2.2.2 Python/3.11.0
+Date: Tue, 07 Feb 2023 14:44:15 GMT
+Content-Type: application/json
+Content-Length: 37
+Connection: close
+
+{"url":"https://very.very/long/url"}```
