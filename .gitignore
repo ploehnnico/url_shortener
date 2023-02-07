@@ -1,0 +1,23 @@
+# general
+__pycache__/
+.env
+.venv
+env/
+venv/
+
+# testing
+.coverage
+.coverage.*
+.pytest_cache
+
+# flask
+instance/
+.webassets-cache
+
+# install
+pip-log.txt
+
+# linter
+.pylintrc
+
+
