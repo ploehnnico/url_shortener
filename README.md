@@ -4,7 +4,7 @@ It provides the functionality to encode a long URL into a short URL such as http
 
 ## Installing
 
-Clone repository and install using pip:
+Clone or download this repository and install using pip:
 ```bash
 $ git clone https://github.com/ploehnnico/url_shortener.git
 $ cd url_shortener
