@@ -6,8 +6,8 @@ It provides the functionality to encode a long URL into a short URL such as http
 
 Clone repository and install using pip:
 ```bash
-$ git clone https://www.github.com/this-repository-url
-$ cd this-repository
+$ git clone https://github.com/ploehnnico/url_shortener.git
+$ cd url_shortener
 $ pip3 install -e .
 ```
 ## Usage
