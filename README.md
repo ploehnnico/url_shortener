@@ -22,7 +22,13 @@ The two api endpoints are available on localhost:5000 at /encode and /decode.
 The encoding endoint is used to encode a given url to a shortened URL:
 
 ```http
-POST /encode
+POST /encode HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Content-Length: xy
+{
+  "url": "url to shorten"
+}
 ```
 
 Example using curl:
@@ -44,7 +50,13 @@ curl -X POST -i -H "Content-Type: application/json" -d '{"url": "https://very.ve
 The decode endoint is used to convert a short URL back to its original URL:
 
 ```http
-POST /decode
+POST /decode /HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Content-Length: xy
+{
+  "url": "short url to decode"
+}
 ```
 
 Using curl:
