@@ -69,4 +69,3 @@ To run the tests:
 cd this-repository
 pytest
 ```
-
