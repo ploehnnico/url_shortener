@@ -10,8 +10,8 @@ The video submission to the project is available as unlisted youtube video here:
 
 Clone or download this repository and install using pip:
 ```bash
-$ git clone https://github.com/ploehnnico/url_shortener.git
-$ cd url_shortener
+$ git clone http://finn-gmbh-baxzoq@git.codesubmit.io/finn-gmbh/default-python-alxxlg
+$ cd default-python-alxxlg
 $ pip3 install -e .
 ```
 ## Usage
@@ -82,6 +82,6 @@ Connection: close
 The project contains unit tests for the shortening functionality and api tests for both apis.
 To run the tests:
 ```bash
-cd this-repository
+cd default-python-alxxlg
 pytest
 ```
