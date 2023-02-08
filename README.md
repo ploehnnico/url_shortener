@@ -2,6 +2,10 @@
 Shortlink is a simple URL shortening service written in Python.
 It provides the functionality to encode a long URL into a short URL such as https://short.link/E8nq13l and back.
 
+# Video Submission
+The video submission to the project is available as unlisted youtube video here:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/g7HcVjEdW_4/0.jpg)](https://www.youtube.com/watch?v=g7HcVjEdW_4)
 ## Installing
 
 Clone or download this repository and install using pip:
